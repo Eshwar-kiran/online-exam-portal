@@ -179,8 +179,6 @@ You should now see the **Online Exam Portal** homepage.
 
 # 📸 Application Screenshots
 
-Include screenshots of:
-
 - 🏠 Home Page
 - 👤 Registration Page
 - 🔐 Login Page
