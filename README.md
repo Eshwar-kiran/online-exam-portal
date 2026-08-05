@@ -1,18 +1,8 @@
 # 🎓 Online Exam Portal
 
-## 1. Project Title / Headline
-
-**Online Exam Portal** – A secure, web-based examination system built with **Flask** and **SQLite** that enables users to register, log in, take multiple-choice exams, receive instant results, and securely manage their sessions.
-
----
-
-## 2. Short Description / Purpose
-
 The Online Exam Portal is a lightweight web application designed to simplify the online examination process. It provides a secure authentication system, interactive exam interface, automatic evaluation, and instant result generation, making it suitable for educational institutions, coding assessments, and online quizzes.
 
----
-
-## 3. Tech Stack
+## Tech Stack
 
 The project was built using the following technologies:
 
@@ -27,7 +17,7 @@ The project was built using the following technologies:
 
 ---
 
-## 4. Data Source
+## Data Source
 
 The application uses an **SQLite database (`exam.db`)**.
 
@@ -40,17 +30,13 @@ The database stores:
 
 The current version includes predefined sample questions, but the system can easily be extended to support dynamic question management through an admin panel.
 
----
-
-# 5. Features / Highlights
+# Features / Highlights
 
 ## 📌 Business Problem
 
 Traditional paper-based examinations require manual evaluation, are time-consuming, and provide delayed feedback.
 
 Educational institutions require a secure, fast, and scalable platform where students can take exams remotely while receiving immediate results.
-
----
 
 ## 🎯 Goal of the Project
 
@@ -62,8 +48,6 @@ The objective of this project is to build a simple yet secure online examination
 - Displays instant results
 - Provides a clean and user-friendly interface
 
----
-
 ## 🖥️ Walkthrough of the Application
 
 ### 🏠 Home Page
@@ -72,15 +56,11 @@ The objective of this project is to build a simple yet secure online examination
 - Register/Login navigation
 - Clean and responsive interface
 
----
-
 ### 👤 User Registration
 
 - Create new user account
 - Passwords securely hashed before storage
 - Prevents duplicate usernames
-
----
 
 ### 🔐 Secure Login
 
@@ -89,7 +69,6 @@ The objective of this project is to build a simple yet secure online examination
 - Session management after successful login
 - Invalid credentials handled gracefully
 
----
 
 ### 📝 Online Examination
 
@@ -98,7 +77,6 @@ The objective of this project is to build a simple yet secure online examination
 - Simple and distraction-free interface
 - Submit answers with a single click
 
----
 
 ### 📊 Instant Result Evaluation
 
@@ -109,14 +87,11 @@ After submission, the system:
 - Shows Pass/Fail status
 - Encourages users with personalized feedback
 
----
 
 ### 🚪 Logout
 
 - Securely ends user session
 - Prevents unauthorized access after logout
-
----
 
 # ✨ Key Features
 
@@ -130,8 +105,6 @@ After submission, the system:
 - ✅ Pass / Fail Evaluation
 - ✅ Responsive User Interface
 - ✅ SQLite Database Integration
-
----
 
 # 📂 Project Structure
 
@@ -152,12 +125,7 @@ Online-Exam-Portal/
 │   └── exam.db
 │
 ├── app.py
-├── requirements.txt
-├── README.md
-└── .gitignore
 ```
-
----
 
 # 🚀 Installation & Setup
 
@@ -205,14 +173,6 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Open your browser and visit:
-
-```
-http://127.0.0.1:5050
-```
-
----
-
 # 📸 Application Screenshots
 
 Include screenshots of:
@@ -222,21 +182,7 @@ Include screenshots of:
 - 🔐 Login Page
 - 📝 Examination Page
 - 📊 Result Page
-
-Example:
-
-```
-screenshots/
-│
-├── home.png
-├── register.png
-├── login.png
-├── exam.png
-└── result.png
-```
-
----
-
+  
 # 💡 Learning Outcomes
 
 Through this project, I gained hands-on experience with:
@@ -252,8 +198,6 @@ Through this project, I gained hands-on experience with:
 - Jinja2 Templates
 - Backend Development using Python
 
----
-
 # 🔮 Future Enhancements
 
 - 👨‍🏫 Admin Dashboard
@@ -267,7 +211,6 @@ Through this project, I gained hands-on experience with:
 - 🎯 Randomized Questions
 - 📄 Downloadable Score Reports (PDF)
 
----
 
 # 📬 Contact
 
@@ -277,6 +220,5 @@ If you have any suggestions or feedback, feel free to connect with me.
 
 **LinkedIn:** https://linkedin.com/in/yourprofile
 
----
 
 ⭐ **If you found this project useful, consider giving it a Star!**
