@@ -124,7 +124,6 @@ Online-Exam-Portal/
 ├── app.py
 ├── requirements.txt
 ├── README.md
-└── .gitignore
 ```
 
 # 🚀 Installation & Setup
