@@ -1,6 +1,6 @@
 # 🎓 Online Exam Portal
 
-The Online Exam Portal is a lightweight web application designed to simplify the online examination process. It provides a secure authentication system, interactive exam interface, automatic evaluation, and instant result generation, making it suitable for educational institutions, coding assessments, and online quizzes.
+The **Online Exam Portal** is a lightweight web application designed to simplify the online examination process. It provides a secure authentication system, interactive exam interface, automatic evaluation, and instant result generation, making it suitable for educational institutions, coding assessments, and online quizzes.
 
 ## Tech Stack
 
@@ -15,7 +15,7 @@ The project was built using the following technologies:
 - 🧩 **Jinja2** – Dynamic HTML templating
 - 💾 **SQLAlchemy** – ORM for database operations
 
-## Data Source
+## **Data Source**
 
 The application uses an **SQLite database (`exam.db`)**.
 
@@ -28,15 +28,15 @@ The database stores:
 
 The current version includes predefined sample questions, but the system can easily be extended to support dynamic question management through an admin panel.
 
-# Features / Highlights
+# **Features / Highlights**
 
-## 📌 Business Problem
+## **📌 Business Problem**
 
 Traditional paper-based examinations require manual evaluation, are time-consuming, and provide delayed feedback.
 
 Educational institutions require a secure, fast, and scalable platform where students can take exams remotely while receiving immediate results.
 
-## 🎯 Goal of the Project
+## **🎯 Goal of the Project**
 
 The objective of this project is to build a simple yet secure online examination platform that:
 
@@ -46,21 +46,21 @@ The objective of this project is to build a simple yet secure online examination
 - Displays instant results
 - Provides a clean and user-friendly interface
 
-## 🖥️ Walkthrough of the Application
+## **🖥️ Walkthrough of the Application**
 
-### 🏠 Home Page
+### **🏠 Home Page**
 
 - Professional landing page
 - Register/Login navigation
 - Clean and responsive interface
 
-### 👤 User Registration
+### **👤 User Registration**
 
 - Create new user account
 - Passwords securely hashed before storage
 - Prevents duplicate usernames
 
-### 🔐 Secure Login
+### **🔐 Secure Login**
 
 - User authentication
 - Password verification using hashing
@@ -68,7 +68,7 @@ The objective of this project is to build a simple yet secure online examination
 - Invalid credentials handled gracefully
 
 
-### 📝 Online Examination
+### **📝 Online Examination**
 
 - Displays multiple-choice questions
 - One answer per question
@@ -76,7 +76,7 @@ The objective of this project is to build a simple yet secure online examination
 - Submit answers with a single click
 
 
-### 📊 Instant Result Evaluation
+### **📊 Instant Result Evaluation**
 
 After submission, the system:
 
@@ -90,7 +90,7 @@ After submission, the system:
 - Securely ends user session
 - Prevents unauthorized access after logout
 
-# ✨ Key Features
+# **✨ Key Features**
 
 - ✅ User Registration
 - ✅ Secure Login System
@@ -103,7 +103,7 @@ After submission, the system:
 - ✅ Responsive User Interface
 - ✅ SQLite Database Integration
 
-# 📂 Project Structure
+# **📂 Project Structure**
 
 ```
 Online-Exam-Portal/
@@ -126,7 +126,7 @@ Online-Exam-Portal/
 ├── README.md
 ```
 
-# 🚀 Installation & Setup
+# **🚀 Installation & Setup**
 
 Follow these steps to run the project on your local machine.
 
@@ -177,33 +177,33 @@ python app.py
 You should now see the **Online Exam Portal** homepage.
 
 
-# 📸 Application Screenshots
+# **📸 Application Screenshots**
 
-- 🏠 Home Page
+- **🏠 Home Page**
   
   ![home-page](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_Homepage.png)
   
-- 👤 Registration Page
+- **👤 Registration Page**
   
   ![Registration-page](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_Registration_page.png)
   
-- 🔐 Login Page
+- **🔐 Login Page**
   
   ![login-page](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_Loginpage.png)
   
-- 📝 Examination Page
+- **📝 Examination Page**
   
   ![exam-1](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_exampage-1.png)
   
   ![exam-2](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_exampage-2.png)
   
-- 📊 Result Page
+- **📊 Result Page**
   
   ![result-1](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_Result-1.png)
   
   ![result-2](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_Result-2.png)
   
-# 💡 Learning Outcomes
+# **💡 Learning Outcomes**
 
 Through this project, I gained hands-on experience with:
 
@@ -218,7 +218,7 @@ Through this project, I gained hands-on experience with:
 - Jinja2 Templates
 - Backend Development using Python
 
-# 🔮 Future Enhancements
+# **🔮 Future Enhancements**
 
 - 👨‍🏫 Admin Dashboard
 - 📚 Multiple Subjects
