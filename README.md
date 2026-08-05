@@ -122,6 +122,9 @@ Online-Exam-Portal/
 │   └── exam.db
 │
 ├── app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
 # 🚀 Installation & Setup
