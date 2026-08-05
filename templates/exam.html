@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Online Examination</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:#eef2f7;
+
+    padding:40px;
+
+}
+
+.container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:white;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.12);
+
+    padding:40px;
+
+}
+
+h1{
+
+    text-align:center;
+
+    color:#2E7D32;
+
+    margin-bottom:10px;
+
+}
+
+.exam-info{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:35px;
+
+    font-size:16px;
+
+}
+
+fieldset{
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    margin-bottom:25px;
+
+    padding:20px;
+
+}
+
+legend{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:#333;
+
+    padding:0 10px;
+
+}
+
+.option{
+
+    margin-top:15px;
+
+}
+
+.option input[type="radio"]{
+
+    display:none;
+
+}
+
+.option label{
+
+    display:block;
+
+    padding:14px 18px;
+
+    border:1px solid #ccc;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    background:#fafafa;
+
+    color:#333;
+
+}
+
+.option label:hover{
+
+    background:#e8f5e9;
+
+    border-color:#2E7D32;
+
+}
+
+.option input[type="radio"]:checked + label{
+
+    background:#2E7D32;
+
+    color:white;
+
+    border-color:#2E7D32;
+
+    font-weight:bold;
+
+}
+
+.submit-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#2E7D32;
+
+    color:white;
+
+    border:none;
+
+    border-radius:6px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.submit-btn:hover{
+
+    background:#1B5E20;
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+padding:20px;
+
+}
+
+legend{
+
+font-size:16px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Online Examination</h1>
+
+<p class="exam-info">
+
+Please select the most appropriate answer for each question.
+All questions are mandatory.
+
+</p>
+
+<form method="POST" action="{{ url_for('submit') }}">
+
+{% for question in questions %}
+
+<fieldset>
+
+<legend>
+
+Question {{ loop.index }}: {{ question.text }}
+
+</legend>
+
+{% set options = question.options.split(',') %}
+
+{% for option in options %}
+
+<div class="option">
+
+<input
+type="radio"
+id="{{ question.id }}_{{ loop.index }}"
+name="{{ question.id }}"
+value="{{ option }}"
+required>
+
+<label for="{{ question.id }}_{{ loop.index }}">
+
+{{ option }}
+
+</label>
+
+</div>
+
+{% endfor %}
+
+</fieldset>
+
+{% endfor %}
+
+<input
+type="submit"
+class="submit-btn"
+value="Submit Examination">
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Exam Result | Online Exam Portal</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    background:#eef2f7;
+
+}
+
+.container{
+
+    width:650px;
+    max-width:90%;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+h1{
+
+    color:#2E7D32;
+
+    margin-bottom:30px;
+
+}
+
+.score-circle{
+
+    width:150px;
+    height:150px;
+
+    margin:0 auto 30px;
+
+    border-radius:50%;
+
+    border:6px solid #2E7D32;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:36px;
+    font-weight:bold;
+
+    color:#2E7D32;
+
+    background:#f8fff8;
+
+}
+
+.result{
+
+    padding:25px;
+
+    border-radius:8px;
+
+    margin-bottom:30px;
+
+}
+
+.pass{
+
+    background:#e8f5e9;
+
+    border-left:6px solid #2E7D32;
+
+}
+
+.fail{
+
+    background:#fff3e0;
+
+    border-left:6px solid #ef6c00;
+
+}
+
+.result h2{
+
+    margin-bottom:15px;
+
+    font-size:30px;
+
+}
+
+.result p{
+
+    color:#555;
+
+    line-height:1.7;
+
+    font-size:17px;
+
+}
+
+.note{
+
+    margin-top:15px;
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+.buttons{
+
+    margin-top:30px;
+
+}
+
+.buttons a{
+
+    display:inline-block;
+
+    margin:10px;
+
+    padding:12px 25px;
+
+    border-radius:6px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.retake{
+
+    background:#1565C0;
+
+    color:white;
+
+}
+
+.retake:hover{
+
+    background:#0D47A1;
+
+}
+
+.home{
+
+    background:#2E7D32;
+
+    color:white;
+
+}
+
+.home:hover{
+
+    background:#1B5E20;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Examination Result</h1>
+
+<div class="score-circle">
+
+{{ score }}/5
+
+</div>
+
+<div class="result {% if score >= 3 %}pass{% else %}fail{% endif %}">
+
+{% if score >= 3 %}
+
+<h2>🎉 Congratulations!</h2>
+
+<p>
+You have successfully passed the examination.
+Your dedication and preparation have paid off.
+Keep up the excellent work and continue striving for success in your future assessments.
+</p>
+
+<p class="note">
+We wish you continued success in your learning journey.
+</p>
+
+{% else %}
+
+<h2>📘 Keep Learning!</h2>
+
+<p>
+You did not achieve the passing score on this attempt, but every exam is an opportunity to learn and improve.
+Review the topics you found challenging, practice regularly, and come back stronger.
+</p>
+
+<p class="note">
+Success is built through consistent effort. Don't give up—you can do it!
+</p>
+
+{% endif %}
+
+</div>
+
+<div class="buttons">
+
+<a href="{{ url_for('exam') }}" class="retake">
+Retake Exam
+</a>
+
+<a href="{{ url_for('index') }}" class="home">
+Logout
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

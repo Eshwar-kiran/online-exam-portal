@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Online Exam Portal</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            min-height:100vh;
+
+            background:#eef2f7;
+
+        }
+
+        .container{
+
+            width:420px;
+
+            background:white;
+
+            padding:35px;
+
+            border-radius:10px;
+
+            box-shadow:0 4px 15px rgba(0,0,0,0.15);
+
+        }
+
+        .icon{
+
+            text-align:center;
+
+            font-size:55px;
+
+            margin-bottom:10px;
+
+        }
+
+        h1{
+
+            text-align:center;
+
+            color:#2E7D32;
+
+            margin-bottom:30px;
+
+            font-size:30px;
+
+        }
+
+        p.subtitle{
+
+            text-align:center;
+
+            color:#666;
+
+            margin-bottom:25px;
+
+            font-size:15px;
+
+        }
+
+        label{
+
+            display:block;
+
+            margin-bottom:8px;
+
+            font-weight:bold;
+
+            color:#444;
+
+        }
+
+        input[type="text"],
+        input[type="password"]{
+
+            width:100%;
+
+            padding:12px;
+
+            margin-bottom:20px;
+
+            border:1px solid #ccc;
+
+            border-radius:6px;
+
+            font-size:15px;
+
+            outline:none;
+
+            transition:.3s;
+
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus{
+
+            border-color:#2E7D32;
+
+            box-shadow:0 0 5px rgba(46,125,50,.25);
+
+        }
+
+        input[type="submit"]{
+
+            width:100%;
+
+            padding:12px;
+
+            background:#2E7D32;
+
+            color:white;
+
+            border:none;
+
+            border-radius:6px;
+
+            font-size:16px;
+
+            cursor:pointer;
+
+            transition:.3s;
+
+        }
+
+        input[type="submit"]:hover{
+
+            background:#1B5E20;
+
+        }
+
+        .error{
+
+            margin-bottom:18px;
+
+            padding:10px;
+
+            background:#fdecea;
+
+            color:#c62828;
+
+            border:1px solid #ef9a9a;
+
+            border-radius:6px;
+
+            text-align:center;
+
+        }
+
+        .footer{
+
+            margin-top:25px;
+
+            text-align:center;
+
+            color:#666;
+
+            font-size:14px;
+
+        }
+
+        .footer a{
+
+            color:#2E7D32;
+
+            text-decoration:none;
+
+            font-weight:bold;
+
+        }
+
+        .footer a:hover{
+
+            text-decoration:underline;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="icon">📝</div>
+
+    <h1>Create Account</h1>
+
+    <p class="subtitle">
+        Register to access the Online Exam Portal.
+    </p>
+
+    {% if error %}
+    <div class="error">
+        {{ error }}
+    </div>
+    {% endif %}
+
+    <form method="POST">
+
+        <label for="username">Username</label>
+
+        <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Choose a username"
+            required>
+
+        <label for="password">Password</label>
+
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Create a password"
+            required>
+
+        <input type="submit" value="Create Account">
+
+    </form>
+
+    <div class="footer">
+        Already have an account?
+        <a href="{{ url_for('login') }}">Login</a>
+    </div>
+
+</div>
+
+</body>
+</html>
