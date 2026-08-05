@@ -126,49 +126,54 @@ Online-Exam-Portal/
 
 # 🚀 Installation & Setup
 
-### 1. Clone the repository
+Follow these steps to run the project on your local machine.
+
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/online-exam-portal.git
 ```
 
-### 2. Navigate to the project folder
+## 2. Open the Project Folder
 
 ```bash
 cd online-exam-portal
 ```
 
-### 3. Create a virtual environment
+## 3. (Optional but Recommended) Create a Virtual Environment
 
 ```bash
-python -m venv venv
+python -m venv .venv
 ```
 
-### 4. Activate the virtual environment
+## 4. Activate the Virtual Environment
 
-**Windows**
+### Windows
 
 ```bash
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
-**Linux / macOS**
+### macOS / Linux
 
 ```bash
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
-### 5. Install dependencies
+## 5. Install the Required Packages
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 6. Run the application
+## 6. Start the Application
 
 ```bash
 python app.py
 ```
+
+You should now see the **Online Exam Portal** homepage.
+
 
 # 📸 Application Screenshots
 
@@ -212,10 +217,5 @@ Through this project, I gained hands-on experience with:
 # 📬 Contact
 
 If you have any suggestions or feedback, feel free to connect with me.
-
-**GitHub:** https://github.com/yourusername
-
-**LinkedIn:** https://linkedin.com/in/yourprofile
-
 
 ⭐ **If you found this project useful, consider giving it a Star!**
