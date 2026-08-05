@@ -180,6 +180,7 @@ You should now see the **Online Exam Portal** homepage.
 # 📸 Application Screenshots
 
 - 🏠 Home Page
+  ![home-page].(https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_Homepage.png)
 - 👤 Registration Page
 - 🔐 Login Page
 - 📝 Examination Page
