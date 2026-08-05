@@ -180,11 +180,28 @@ You should now see the **Online Exam Portal** homepage.
 # 📸 Application Screenshots
 
 - 🏠 Home Page
-  ![home-page].(https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_Homepage.png)
+  
+  ![home-page](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_Homepage.png)
+  
 - 👤 Registration Page
+  
+  ![Registration-page](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_Registration_page.png)
+  
 - 🔐 Login Page
+  
+  ![login-page](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_Loginpage.png)
+  
 - 📝 Examination Page
+  
+  ![exam-1](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_exampage-1.png)
+  
+  ![exam-2](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_exampage-2.png)
+  
 - 📊 Result Page
+  
+  ![result-1](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_Result-1.png)
+  
+  ![result-2](https://github.com/Eshwar-kiran/online-exam-portal/blob/main/screenshots/snapshot_of_Result-2.png)
   
 # 💡 Learning Outcomes
 
