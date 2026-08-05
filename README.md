@@ -15,8 +15,6 @@ The project was built using the following technologies:
 - 🧩 **Jinja2** – Dynamic HTML templating
 - 💾 **SQLAlchemy** – ORM for database operations
 
----
-
 ## Data Source
 
 The application uses an **SQLite database (`exam.db`)**.
@@ -86,7 +84,6 @@ After submission, the system:
 - Displays total marks
 - Shows Pass/Fail status
 - Encourages users with personalized feedback
-
 
 ### 🚪 Logout
 
